@@ -55,31 +55,107 @@ li.dropdown {
     display: block;
 }
 
-.content {
-    padding-top: 3rem;
+.content h1 {
     text-align: center;
-    position: relative;
-}
-
-.content h1{
-    
     font-size: 35px;
 }
 
-.content .text {
-    padding-top: 1rem;
-    padding-bottom: 1rem;
+.content p {
     text-align: center;
+}
+
+.content-center {
+    display: grid;
     justify-content: center;
+    padding-top: 1rem;
+}
+
+.content-inside {
     display: block;
-}
-
-.content .text .textBox {
-    width: auto;
-    box-sizing: border-box;
-    justify-content: center;
     align-items: center;
-    position: absolute;
-    display: flex;
+    text-align: center;
 }
 
+.box {
+    margin: auto;
+    width: 25rem;
+    height: 2rem;
+    margin-bottom: 1.5rem;
+    border: 1.5px solid black;
+    font-family: monospace;
+}
+
+.box:focus {
+    border: 2px solid rgb(46, 165, 255)
+}
+
+.content-inside label{
+    text-align: left;
+    display: block;
+    position: relative;
+}
+
+.content-agreement {
+    margin-bottom: 1rem;
+}
+
+.content-agreement input[type="check"]{
+    text-align: center;
+    max-width: 20rem;
+    display: inline-block;
+    position: relative;
+    font-size: 100%;
+}
+
+.button {
+    font-family: inherit;
+    font-weight: bold;
+    font-size: 16px;
+    height: 2.5rem;
+    background-color: darkgray;
+    transition: 0.3s;
+}
+
+.button:hover {
+    color: white;
+    cursor: pointer;
+    background-color: rgb(99, 98, 98);
+    transition: 0.3s;
+}
+
+@media only screen and (max-width: 800px){
+    body{
+        font-size: 14px;
+    }
+
+    .box {
+        margin: auto;
+        width: 100%;
+        height: 2rem;
+        margin-bottom: 1.5rem;
+        border: 1.5px solid black;
+        font-family: monospace;
+    }
+    
+    .box:focus {
+        border: 2px solid rgb(46, 165, 255)
+    }
+    
+    .content-inside label{
+        text-align: left;
+        display: block;
+        position: relative;
+    }
+    
+    .content-agreement input[type="check"]{
+        text-align: center;
+        max-width: 100%;
+        display: inline-block;
+        position: relative;
+        font-size: 100%;
+    }
+
+    .content-agreement {
+        margin-bottom: 1rem;
+    }
+}

@@ -26,18 +26,39 @@
     <!-- Content -->
     <div class="content">
         <h1>Pre-Order</h1>
-        <div class="text">
+        <p>Don't miss the game! Pre-order now and get notified when this game is released!</p>
+        <p>Fill The Form Below</p>
+        <div class="content-center">
             <!-- Isi dari content nya -->
-            <p>
-                Don't miss the game! Pre-order now and get notified when this game is released!
-            </p>
-            <div class="textBox">
-                <input type="text" ID="usernameBox" name="usernameBox" placeholder="Username">
-                <input type="email" ID="emailBox" name="emailBox" placeholder="Email">
-                <input type="password" ID="passwordBox" name="passwordBox" placeholder="Password">
-                <input type="text" ID="addressBox" name="addressBox" placeholder="Address">
-                <input type="number" ID="copiesBox" name="copiesBox" placeholder="Number of Copies">
+            <div class="content-inside">
+                <input type="text" ID="usernameBox" placeholder="Username" class="box" required>
             </div>
+            <div class="content-inside">
+                <input type="text" ID="emailBox" placeholder="Email" class="box" required>
+            </div>
+            <div class="content-inside">
+                <input type="password" ID="passwordBox" placeholder="Password" class="box" required>
+            </div>
+            <div class="content-inside">
+                <input type="text" ID="addressBox" placeholder="Address" class="box" required>
+            </div>
+            <div class="content-inside">
+                <input type="number" ID="copiesBox" placeholder="Number of Copies" class="box">
+            </div>
+            <div class="content-inside">
+                <label for="type">Game Type: </label>
+                <select id="type" class="box" required>
+                    <option value="nill">Select One</option>
+                    <option value="R7-The Game">Rainbow Seven Siege: The Game</option>
+                    <option value="R7-Deluxe">Rainbow Seven Siege: Deluxe Edition</option>
+                    <option value="R7-Gold">Rainbow Seven Siege: Gold Edition</option>
+                    <option value="R7-Ultimate">Rainbow Seven Siege: Ultimate Edition</option>
+                </select>
+            </div>
+            <div class="content-agreement">
+                <input type="checkbox" id="chckBox" required>I Agree with <a href>Terms and Service Agreement</a>
+            </div>
+            <button id="submitBtn" class="button" onclick="submitBtnClick()">Submit</button>
         </div>
     </div>
 </body>
