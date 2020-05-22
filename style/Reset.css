@@ -46,12 +46,17 @@ table {
 	border-spacing: 0;
 }
 
-
 /* header */
 .navigation ul {
+    font-family: monospace;
+    font-size: 16px;
     overflow: hidden;
     background-color: rgb(48, 47, 47);
   }
+
+.navigation li:hover {
+    background-color: rgba(54,169,224,1);
+} 
   
 .navigation li {
     float: left;
@@ -97,6 +102,9 @@ table {
 
 /* footer */
 .footer{
+    
+    font-family: monospace;
+    font-size: 16px;
     margin-top: 50px;
     overflow: hidden;
     background-color: rgb(48, 47, 47);

@@ -1,0 +1,14 @@
+.slider{
+    margin: 20px auto;
+}
+
+.slideImages{
+    display: block;
+    width: 4000%;
+    height: 400px;
+    background-size: cover;
+}
+
+.image{
+    float: left;
+}
