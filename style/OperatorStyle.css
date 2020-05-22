@@ -239,8 +239,7 @@ h3{
 .prev{
     width: 50px;
     height: 60px;
-    background-image: url(asset/Img/previous.png);
-    /* background-color: darkkhaki; */
+    background-image: url(../asset/Img/previous.png);
     position: absolute;
     top: 300px;
     left: -40px;
@@ -250,8 +249,7 @@ h3{
 .next{
     width: 50px;
     height: 60px;
-    background-image: url(asset/Img/next1.png);
-    /* background-color: darkkhaki; */
+    background-image: url(../asset/Img/next.png);
     position: absolute;
     top: 300px;
     right: 0;
