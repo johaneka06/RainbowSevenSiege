@@ -106,10 +106,7 @@ table {
 
 .footer .group, .footer .copyright{
     box-sizing: border-box;
-    text-align: left;
-    padding: 20px 100px;
-    float: left;
-    width: 50%;
+    text-align: center;
 }
 
 .footer h4{
