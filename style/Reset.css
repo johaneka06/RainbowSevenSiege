@@ -104,18 +104,12 @@ table {
     text-align: center;
 }
 
-.footer .group, .footer .copyright{
+.footer .copyright{
     box-sizing: border-box;
     text-align: center;
 }
 
-.footer h4{
-    font-weight: bold;
-    font-size: 20px;
-    color: white;
-}
-
-.footer .group li, .footer p{
+.footer p{
     font-size: 15px;
     margin: 10px 0px;
     color: white;
