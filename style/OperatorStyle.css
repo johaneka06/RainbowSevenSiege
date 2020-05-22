@@ -1,0 +1,276 @@
+body{
+    background-color: black;
+    font-family: monospace;
+    font-size: 16px;
+    color: white;
+}
+
+h1{
+    font-size: 70px;
+    margin: 50px 0;
+    text-align: center;
+    font-weight: bold;
+}
+
+h2{
+    font-weight: bold;
+    font-size: 50px;
+    text-align: left;
+    color: white;
+    margin-bottom: 20px;
+}
+
+h3{
+    display: block;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: left;
+    color: white;
+    line-height: 150%;
+    margin-bottom: -5px;
+    margin-top: 15px;
+}
+
+.navigation ul {
+    overflow: hidden;
+    background-color: rgb(48, 47, 47);
+  }
+  
+.navigation li {
+    float: left;
+}
+
+.navigation li a, .dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 16px 16px;
+    text-decoration: none;
+}
+
+.navigation li img {
+    margin-left: 18px;
+    margin-right: 15px;
+	float: left;
+    width: 200px;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgb(48, 47, 47);
+    min-width: 120px;
+    box-shadow: 0px 20px 16px 0px rgba(0,0,0,0.4);
+    z-index: 4;
+}
+  
+.dropdown-content a {
+    color: white;
+    padding: 10px 14px;
+    display: block;
+    text-align: left;
+}
+  
+.dropdown-content a:hover {
+    background-color: darkgray;
+}
+  
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.lightBox{
+    margin: auto;
+    width: 85%;
+}
+
+.operator li{
+    width: 170px;
+    height: 284px;
+    border: 1px solid white;
+    float: left;
+    margin-right: 10px;
+    margin-top: 10px;
+    position: relative;
+}
+
+.operator li img{
+    width: 170px;
+    transition: .3s;
+}
+
+.operator li span {
+    display: block;
+    width: 170px;
+    height: 340px;
+    position: absolute;
+    top: 0;
+    text-align: center;
+    line-height: 580px;
+    font-size: 20px;
+    color: white;
+    opacity: 0;
+    transition: .3s;
+    z-index: 4;
+    text-shadow: 0 0 2px black;
+}
+
+.operator li a:hover span{
+    opacity: 1;
+}
+
+.operator li a:hover img{
+    transform: scale(1.2);
+    background-color: black;
+    box-shadow: 0px 0px 15px rgba(54,169,224,1);
+    border: 1px solid rgba(54,169,224,1);
+    z-index: 3;
+    position: absolute;
+}
+
+.clear{
+    clear: both;
+}
+
+.overlay{
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0);
+    z-index: 10;
+    transition: .8s;
+    text-align: center;
+    padding: 40px;
+}
+
+.overlay:target{
+    width: auto;
+    height: auto;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0,0,0,0.8);
+    
+}
+
+.overlay:target .content{
+    animation: Fade .5s;
+}
+
+.overlay .close{
+    color: white;
+    text-decoration: none;
+    background-color: darkgrey;
+    border: 1px solid white;
+    line-height: 14px;
+    padding: 3px;
+    font-weight: bold;
+    opacity: 0;
+}
+
+.overlay:target .close{
+    animation: Fade .8s .5s forwards;
+}
+
+.content{
+    position: relative;
+    width: auto;
+    height: auto;
+    padding: 20px;
+}
+
+.lightBox .overlay .content img{
+    top: 0px;
+    right: 0px;
+    width: 600px;
+    height: 800px;
+    position: absolute;
+}
+
+.layout{
+    position: absolute;
+    z-index: 4;
+    width: 60%;
+    background-color: rgba(0,0,0,0.5);
+    height: auto;
+    padding-bottom: 20px;
+}
+
+.layout h3 p{
+    font-weight: normal;
+    display: inline-block;
+    font-size: 20px;
+    text-align: left;
+    color: white;
+    margin: 0px;
+    font-style: normal;
+}
+
+.layout p{
+    font-size: 17px;
+    font-style: italic;
+    margin-top: -5px;
+    text-align: left;
+}
+
+@keyframes zoomAndFade{
+    0%{
+        transform: scale(0);
+        opacity: 0;
+    }
+    100%{
+        transform: scale(1);
+        opacity: 1;
+    }
+
+}
+
+@keyframes Fade{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+
+}
+
+.prev{
+    width: 50px;
+    height: 60px;
+    background-image: url(asset/Img/previous.png);
+    /* background-color: darkkhaki; */
+    position: absolute;
+    top: 300px;
+    left: -40px;
+    z-index: 8;
+}
+
+.next{
+    width: 50px;
+    height: 60px;
+    background-image: url(asset/Img/next1.png);
+    /* background-color: darkkhaki; */
+    position: absolute;
+    top: 300px;
+    right: 0;
+    z-index: 8;
+}
+
+@media only screen and (max-width: 800px){
+    body{
+        background-color: black;
+        font-family: monospace;
+        font-size: 16px;
+        color: white;
+    }
+    
+    h1{
+        font-size: 50px;
+        margin: 50px 0;
+        text-align: center;
+        font-weight: bold;
+    }
+
+}
