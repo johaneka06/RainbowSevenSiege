@@ -16,17 +16,20 @@ ul {
 li {
     float: left;
 }
+
+li .logo{
+    margin-left: 18px;
+    margin-right: 15px;
+	float: left;
+    width: 200px;
+}
   
-li a, .dropbtn {
+.navbar li a, .dropbtn {
     display: inline-block;
     color: white;
     text-align: center;
     padding: 16px 16px;
     text-decoration: none;
-}
-  
-li a:hover, .dropdown:hover .dropbtn {
-    background-color: darkgray;
 }
   
 li.dropdown {
@@ -38,7 +41,7 @@ li.dropdown {
     position: absolute;
     background-color: rgb(48, 47, 47);
     min-width: 120px;
-    box-shadow: 0px 16px 16px 0px rgba(255, 255, 255, 0.2);
+    box-shadow: 0px 20px 16px 0px rgba(0,0,0,0.4);
     z-index: 1;
 }
   
@@ -59,11 +62,15 @@ li.dropdown {
 
 .content h1 {
     text-align: center;
-    font-size: 35px;
+    font-size: 45px;
+    font-weight: bold;
+    padding-top: 1.75rem;
+    padding-bottom: 1.75rem;
 }
 
 .content p {
     text-align: center;
+    padding-bottom: 1.25rem;
 }
 
 .content-center {
@@ -90,7 +97,8 @@ li.dropdown {
 }
 
 .box:focus {
-    border: 2px solid rgb(46, 165, 255)
+    border: 3px solid rgb(46, 165, 255);
+    box-shadow: 2px 4px 6px 2px rgba(46, 165, 255, 0.3)
 }
 
 .content-inside label{
@@ -133,7 +141,53 @@ button:disabled, button[disabled] {
 
 }
 
+.overlay {
+    text-align: center;
+}
+
+.overlay:target{
+    width: auto;
+    height: auto;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0,0,0,0.8);
+    
+}
+
+.overlay:target .content{
+    animation: Fade .5s;
+}
+
+.overlay .back {
+    border: 3px 3px black;
+    background-color: darkgray;
+    text-decoration: none;
+    justify-content: left;
+    line-height: 14px;
+    text-align: left;
+    font-size: 15pt;
+    color: white;
+}
+
+.overlay .content{
+    overflow: auto;
+    position: relative;
+    width: auto;
+    height: auto;
+    padding: 5px;
+    margin-left: 75px;
+    margin-right: 75px;
+}
+
 @media only screen and (max-width: 800px){
+    .navbar li a, .dropbtn {
+        display: inline-block;
+        color: white;
+        text-align: center;
+        padding: 10px 10px;
+        text-decoration: none;
+    }
+
     body{
         font-size: 14px;
     }
