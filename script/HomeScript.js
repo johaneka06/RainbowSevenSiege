@@ -9,7 +9,7 @@ $(function(){
 
     // Operasi slide
     setInterval(function(){
-        $slideImages.animate({'margin-left': '-=940px'}, 1000, function(){
+        $slideImages.animate({'margin-left': '-=1500px'}, 1000, function(){
             currSlide++
             if(currSlide === $images.length){
                 currSlide = 1

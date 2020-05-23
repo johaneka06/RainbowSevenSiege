@@ -7,9 +7,10 @@
 
 /* Desain Utama */
 body{
-	background-image: url(../asset/img/map/Walpaper/Bg1.jpg);
+	background-image: url(../asset/img/bg.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
+	background-position: center;
 	font: 16px 'bebasnue-regular-webfont','Arial Narrow', Arial , sans-serif;
 	background-color: black;
 }
