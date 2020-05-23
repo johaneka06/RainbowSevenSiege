@@ -1,3 +1,12 @@
+@font-face {
+    font-family: 'Rainbow';
+    src: url(../asset/Font/Rainbow.woff) format('woff'),
+         url(../asset/Font/Rainbow.ttf) format('truetype'),
+         url(../asset/Font/Rainbow.woff2) format('woff2');
+    font-display: optional;
+    font-style: normal;
+}
+
 body{
     background-color: black;
     color: white;
@@ -5,7 +14,8 @@ body{
 }
 
 h2{
-    font-size: 50px;
+    font-family: Rainbow;
+    font-size: 70px;
     text-align: center;
 }
 
@@ -57,15 +67,15 @@ h2{
 }
 
 .layout2 h3{
+    font-family: Rainbow;
     top: 25%;
-    font-weight: bold;
-    font-size: 25px;
+    font-size: 40px;
 }
 
 .layout2 h4{
+    font-family: Rainbow;
     top: 13%;
-    font-weight: lighter;
-    font-size: 20px;
+    font-size: 25px;
 }
 
 .clear{
@@ -96,8 +106,8 @@ h2{
 }
 
 .operator h3{
-    font-weight: lighter;
-    font-size: 30px;
+    font-family: Rainbow;
+    font-size: 35px;
     text-align: center;
 }
 
