@@ -1,0 +1,212 @@
+@font-face {
+    font-family: 'Rainbow';
+    src: url(../asset/Font/Rainbow.woff) format('woff'),
+         url(../asset/Font/Rainbow.ttf) format('truetype'),
+         url(../asset/Font/Rainbow.woff2) format('woff2');
+    font-display: optional;
+    font-style: normal;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    font-family: monospace;
+    font-size: 16px;
+    color: white;
+}
+
+h1 {
+    font-size: 60px;
+    margin-left: 20%;
+    margin-right: 20%;
+    font-family: Rainbow;
+}
+
+.navigation ul {
+    overflow: hidden;
+    background-color: rgb(48, 47, 47);
+    margin: 0;
+  }
+  
+.navigation li {
+    float: left;
+}
+
+.navigation li a, .dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 16px 16px;
+    text-decoration: none;
+}
+
+.navigation li img {
+    margin-left: 18px;
+    margin-right: 15px;
+	float: left;
+    width: 200px;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgb(48, 47, 47);
+    min-width: 120px;
+    box-shadow: 0px 20px 16px 0px rgba(0,0,0,0.4);
+    z-index: 4;
+}
+  
+.dropdown-content a {
+    color: white;
+    padding: 10px 14px;
+    display: block;
+    text-align: left;
+}
+  
+.dropdown-content a:hover {
+    background-color: darkgray;
+}
+  
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.lightBox{
+    margin: auto;
+    width: 85%;
+}
+
+.topImage{
+    height: 600px;
+    position: relative;
+    text-align: center;
+    overflow: hidden;
+}
+
+.topBackgroundImage{
+    height: 100%;
+    width: 100%;
+    object-fit: none;
+    filter: blur(3px);
+    -webkit-filter: blur(3px);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    left:-15px;
+    right:-15px;
+    top:-15px;
+    bottom:-15px;
+}
+
+.textOverBackground{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: black;
+    text-align: center;
+}
+
+.title{
+    font-size: 200px;
+    font-family: Rainbow;
+}
+
+.timer{
+    font-size: 40px;
+    font-weight: bolder;
+    background-color: black;
+    color: white;
+    padding: 10px;
+}
+
+.content-1{
+    margin: 60px;
+    text-align: center;
+    display: block;
+}
+
+.description{
+    padding-top: 10px;
+    font-size: 19px;
+    margin-right: 30%;
+    margin-left: 30%;
+}
+
+.operators{
+    position: relative;
+    text-align: center;
+    color: white;
+    width: 100%;
+}
+
+.goyo{
+    position: absolute;
+    top: 40px;
+    left: 40px;
+    background-color: black;
+    padding: 20px;
+    width: 20%;
+    opacity: 70%;
+}
+
+.amaru{
+    position: absolute;
+    bottom: 40px;
+    right: 40px;
+    background-color: black;
+    padding: 20px;
+    width: 20%;
+    opacity: 70%;
+}
+
+.operatorname{
+    font-size: 70px;
+    font-family: Rainbow;
+}
+
+.operatorsimage{
+    width: 100%;
+}
+
+.mapcontainer{
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.map{
+    width: 100%;
+    object-fit: cover;
+    filter: blur(3px);
+    -webkit-filter: blur(3px);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    left:-15px;
+    right:-15px;
+    top:-15px;
+    bottom:-15px;
+}
+
+.maptext{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: white;
+    text-align: center;
+    background-color: black;
+    padding: 30px;
+    opacity: 90%;
+}
+
+.maptitle{
+    font-size: 80px;
+    font-family: Rainbow;
+}
+
+.mapdesc{
+    font-size: 19px;
+    font-weight: bold;
+}
