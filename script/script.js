@@ -75,7 +75,6 @@ function submitBtnClick() {
     else if(!document.getElementById("chckBox").checked) 
         alert("You must agree with the terms and service agreement.");
     else{
-        //Save the data to file
         alert("Thank you for pre-ordering Rainbow Seven Siege: " + gameType + " Edition! You will be notified when we've released the game!");
     }
 }
