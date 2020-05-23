@@ -3,6 +3,7 @@ body{
     font-size: 16px;
     color: white;
     background-image: url(../asset/Img/OperatorBg.jpg);
+    background-size: cover;
 }
 
 ul {
@@ -62,6 +63,10 @@ li.dropdown {
   
 .dropdown:hover .dropdown-content {
     display: block;
+}
+
+.content{
+    margin-bottom: 30px;
 }
 
 .content h1 {

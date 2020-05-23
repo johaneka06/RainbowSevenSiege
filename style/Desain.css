@@ -1,19 +1,16 @@
 /* font */
 
-
 @font-face{
-	
 	font-family: 'bebasnue-regular-webfont'
 	src:url(../Font/bebasnue-regular-webfont.woff) format('woff');
 }
-
 
 /* Desain Utama */
 body{
 	background-image: url(../asset/img/map/Walpaper/Bg1.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
-	font: 25px/36px 'bebasnue-regular-webfont','Arial Narrow', Arial , sans-serif;
+	font: 16px 'bebasnue-regular-webfont','Arial Narrow', Arial , sans-serif;
 	background-color: black;
 }
 
@@ -27,11 +24,9 @@ h1{
 }
 
 .Container {
-	width: 600px
-	background-color: white;
-	margin: auto;
+	text-align: center;
+	margin: 0px auto;
 	padding: 40px;
-
 }
 
 .gallery li{
@@ -43,8 +38,8 @@ h1{
 	position: relative;
 }
 
-
 .gallery li span{
+	font-size: 25px;
 	display: block;
 	width: 310px;
 	position: absolute;
@@ -63,6 +58,7 @@ h1{
 	transform: scale(1) rotate(360deg);
 
 }
+
 .clear {
 	clear: both;
 }
