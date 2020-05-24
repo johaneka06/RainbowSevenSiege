@@ -9,11 +9,13 @@ $(function(){
 
     // Operasi slide
     setInterval(function(){
-        $slideImages.animate({'margin-left': '-=1500px'}, 1000, function(){
+    var img = document.getElementById('imageId'); 
+    var height = img.clientHeight;
+        $slideImages.animate({'margin-top': ('-='+height)}, 1000, function(){
             currSlide++
             if(currSlide === $images.length){
                 currSlide = 1
-                $slideImages.css('margin-left', 0)
+                $slideImages.css('margin-top', 0)
             }
         })
     }, 3000)
