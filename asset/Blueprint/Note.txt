@@ -1,0 +1,3 @@
+*Jika ingin menghilangkan tampilan slice
+
+View / Clear Slices
