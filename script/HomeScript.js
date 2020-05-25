@@ -11,7 +11,7 @@ $(function(){
     setInterval(function(){
     var img = document.getElementById('imageId'); 
     var height = img.clientHeight;
-        $slideImages.animate({'margin-top': ('-='+height)}, 1000, function(){
+        $slideImages.animate({'margin-top': ('-='+height)}, 1500, function(){
             currSlide++
             if(currSlide === $images.length){
                 currSlide = 1
