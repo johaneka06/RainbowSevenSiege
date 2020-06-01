@@ -23,6 +23,54 @@ h1 {
     font-family: Rainbow;
 }
 
+.navigation ul {
+    overflow: hidden;
+    background-color: rgb(48, 47, 47);
+    margin: 0;
+  }
+  
+.navigation li {
+    float: left;
+}
+
+.navigation li a, .dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 16px 16px;
+    text-decoration: none;
+}
+
+.navigation li img {
+    margin-left: 18px;
+    margin-right: 15px;
+	float: left;
+    width: 200px;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgb(48, 47, 47);
+    min-width: 120px;
+    box-shadow: 0px 20px 16px 0px rgba(0,0,0,0.4);
+    z-index: 4;
+}
+  
+.dropdown-content a {
+    color: white;
+    padding: 10px 14px;
+    display: block;
+    text-align: left;
+}
+  
+.dropdown-content a:hover {
+    background-color: darkgray;
+}
+  
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
 .lightBox{
     margin: auto;
     width: 85%;
@@ -162,3 +210,156 @@ h1 {
     font-size: 19px;
     font-weight: bold;
 }
+
+@media only screen and (max-width: 1000px){
+
+    body{
+        margin: 0;
+        padding: 0;
+        background-color: black;
+        font-family: monospace;
+        font-size: 13px;
+        color: white;
+    }
+
+    .navigation li{
+        font-size: 14px;
+    }
+
+    .topImage{
+        height: 300px;
+        position: relative;
+        text-align: center;
+        overflow: hidden;
+    }
+    
+    .textOverBackground{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        color: black;
+        text-align: center;
+    }
+    
+    .title{
+        font-size: 100px;
+        font-family: Rainbow;
+    }
+    
+    .timer{
+        font-size: 20px;
+        font-weight: bolder;
+        background-color: black;
+        color: white;
+        padding: 5px;
+    }
+
+    h1 {
+        font-size: 40px;
+        margin-left: 10%;
+        margin-right: 10%;
+        font-family: Rainbow;
+    }
+
+    .content-1{
+        margin: 60px;
+        text-align: center;
+        display: block;
+    }
+    
+    .description{
+        padding-top: 5px;
+        font-size: 15px;
+        margin-right: 1%;
+        margin-left: 1%;
+    }
+
+    .operators{
+        position: relative;
+        text-align: center;
+        color: white;
+        width: 100%;
+    }
+    
+    .goyo{
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        background-color: black;
+        padding: 5px;
+        width: 15%;
+        opacity: 70%;
+    }
+    
+    .amaru{
+        position: absolute;
+        bottom: 10px;
+        right: 10px;
+        background-color: black;
+        padding: 5px;
+        width: 15%;
+        opacity: 70%;
+    }
+    
+    .operatorname{
+        font-size: 30px;
+        font-family: Rainbow;
+    }
+    
+    .operatorsimage{
+        width: 100%;
+        height: 190px;
+        object-fit: cover;
+    }
+
+    .operatordesc{
+        display: none;
+    }
+
+    .mapcontainer{
+        text-align: center;
+        position: relative;
+        overflow: hidden;
+    }
+    
+    .map{
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+        filter: blur(3px);
+        -webkit-filter: blur(3px);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        left:-15px;
+        right:-15px;
+        top:-15px;
+        bottom:-15px;
+    }
+    
+    .maptext{
+        position: absolute;
+        top: 50%;
+        left: 0%;
+        transform: translate(0%,-50%);
+        color: white;
+        text-align: center;
+        background-color: black;
+        padding: 10px;
+        opacity: 90%;
+    }
+    
+    .maptitle{
+        font-size: 40px;
+        font-family: Rainbow;
+        margin-top: 5px;
+    }
+    
+    .mapdesc{
+        margin: 5px;
+        font-size: 14px;
+        font-weight: bold;
+    }
+}
+
