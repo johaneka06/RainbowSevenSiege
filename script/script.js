@@ -34,6 +34,40 @@ function checkPassword(password){
     return false;
 }
 
+function checkPasswordMustBeAlphanumeric(password) {
+    var status = true;
+	//Check apakah hanya ada huruf atau angka
+	for(var index = 0; index < password.length; index++) {
+		if(!(password.charAt(index) >= 'A' && password.charAt(index) <= 'Z' || password.charAt(index) >= 'a' && password.charAt(index) <= 'z' || password.charAt(index) >= '0' && password.charAt(index) <= '9')) {
+			status = false;
+			break;
+		}
+	}
+	//Check apakah ada angka
+	if(status) {
+		for(var index = 0; index < password.length; index++) {
+			if(password.charAt(index) >= '0' && password.charAt(index) <= '9') {
+				status = true;
+				break;
+			}
+			else {
+				status = false;
+			}
+		}
+	}
+	//Check apakah ada huruf
+	if(status) {
+		for(var index = 0; index < password.length; index++) {
+			if(password.charAt(index) >= 'A' && password.charAt(index) <= 'Z' || password.charAt(index) >= 'a' && password.charAt(index) <= 'z'){
+				status = true;
+				break;
+			}
+			else status = false;
+		}
+	}
+	return status;
+}
+
 function checkQuantity(copies){
     if(copies > 0) return true;
     return false;
@@ -66,6 +100,8 @@ function submitBtnClick() {
         alert("Password must be filled!");
     else if(!checkPassword(password))
         alert("Password must be 8 chars or more!");
+    else if(!checkPasswordMustBeAlphanumeric(password))
+        alert("Password must be alphanumeric!");
     else if(address == "")
         alert("Address must be filled!");
     else if(!checkQuantity(copies))
