@@ -34,13 +34,6 @@ function checkPassword(password){
     return false;
 }
 
-//Regex validation for password must be alphanumeric
-function checkPasswordMustBeAlphanumeric(password){
-    var regexPattern = /(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]/g; 
-    if(password.match(regexPattern)) return true;
-    return false;
-}
-
 function checkQuantity(copies){
     if(copies > 0) return true;
     return false;
@@ -73,8 +66,6 @@ function submitBtnClick() {
         alert("Password must be filled!");
     else if(!checkPassword(password))
         alert("Password must be 8 chars or more!");
-    else if(!checkPasswordMustBeAlphanumeric(password))
-        alert("Password must be alphanumeric!");
     else if(address == "")
         alert("Address must be filled!");
     else if(!checkQuantity(copies))
